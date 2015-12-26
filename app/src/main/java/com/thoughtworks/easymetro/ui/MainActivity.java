@@ -29,7 +29,6 @@ import com.thoughtworks.easymetro.utils.Utility;
 public class MainActivity extends Activity
 {
     private static final String TAG = MainActivity.class.getSimpleName();
-    public static final int MILLIS_IN_SECOND = 1000;
     private TextView mOutputTv;
     private Button mOutputBtn;
     private Spinner mStartSpinner;
@@ -79,7 +78,7 @@ public class MainActivity extends Activity
                     {
                         mOutputTv.setText(result);
                         long t2 = System.currentTimeMillis();
-                        Log.i(TAG, "Calcualation time = " + (t2 - t1) / MILLIS_IN_SECOND + " s");
+                        Log.i(TAG, "Calcualation time = " + (t2 - t1)  + " ms");
 
                     }
 
